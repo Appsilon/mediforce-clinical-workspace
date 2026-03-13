@@ -1,0 +1,84 @@
+Starting TLG generation...
+Total scripts: 6 
+
+========================================
+Running: f_01_km_ae.R 
+Time: 12:27:26 
+TLG setup complete for study: CDISCPILOT01 
+ADaM data directory: /workspace/data 
+Output directory: /workspace/tlg_outputs 
+Generating F-15.2.1: Time to First Treatment-Emergent Adverse Event...
+  Status: FAILED
+  Error: In argument: `time_to_first_ae = min(ASTDY, na.rm = TRUE)`. 
+
+========================================
+Running: l_01_ae_listing.R 
+Time: 12:27:27 
+TLG setup complete for study: CDISCPILOT01 
+ADaM data directory: /workspace/data 
+Output directory: /workspace/tlg_outputs 
+Generating L-16.3.4: Listing of All Adverse Events...
+  Status: FAILED
+  Error:  
+
+========================================
+Running: t_01_disp.R 
+Time: 12:27:27 
+TLG setup complete for study: CDISCPILOT01 
+ADaM data directory: /workspace/data 
+Output directory: /workspace/tlg_outputs 
+Generating T-14.1.1: Subject Disposition...
+  Status: FAILED
+  Error: In argument: `ENRLFL == "Y"`. 
+
+========================================
+Running: t_02_demo.R 
+Time: 12:27:27 
+TLG setup complete for study: CDISCPILOT01 
+ADaM data directory: /workspace/data 
+Output directory: /workspace/tlg_outputs 
+Generating T-14.1.2: Demographics and Baseline Characteristics...
+  Status: FAILED
+  Error: In argument: `EFFFL == "Y"`. 
+
+========================================
+Running: t_03_adascog_w24.R 
+Time: 12:27:27 
+TLG setup complete for study: CDISCPILOT01 
+ADaM data directory: /workspace/data 
+Output directory: /workspace/tlg_outputs 
+Generating T-14.2.1: Primary Analysis: ADAS-Cog (11) at Week 24...
+  Status: FAILED
+  Error: In argument: `EFFFL == "Y"`. 
+
+========================================
+Running: t_04_ae_summ.R 
+Time: 12:27:28 
+TLG setup complete for study: CDISCPILOT01 
+ADaM data directory: /workspace/data 
+Output directory: /workspace/tlg_outputs 
+Generating T-14.3.1.1: Overall Summary of Adverse Events...
+  Status: FAILED
+  Error: Must group by variables found in `.data`. 
+
+========================================
+TLG Generation Summary
+========================================
+
+Total scripts: 6 
+Successful: 0 
+Failed: 6 
+Duration: 1.4 seconds
+
+Failed scripts:
+  - f_01_km_ae.R : ERROR: In argument: `time_to_first_ae = min(ASTDY, na.rm = TRUE)`. 
+  - l_01_ae_listing.R : ERROR:  
+  - t_01_disp.R : ERROR: In argument: `ENRLFL == "Y"`. 
+  - t_02_demo.R : ERROR: In argument: `EFFFL == "Y"`. 
+  - t_03_adascog_w24.R : ERROR: In argument: `EFFFL == "Y"`. 
+  - t_04_ae_summ.R : ERROR: Must group by variables found in `.data`. 
+
+Output files generated:
+  Tables: 0 files
+  Figures: 0 files
+  Listings: 0 files
